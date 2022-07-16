@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class Register extends StatelessWidget {
   const Register({Key? key}) : super(key: key);
@@ -56,29 +57,49 @@ class Register extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 3.h,
               ),
               Textfild(Icons.person, "Enter Your Name", "UserName"),
               SizedBox(
-                height: 20,
+                height: 3.h,
               ),
               Textfild(Icons.mail, "Enter Your E-mail", "E-Mail"),
               SizedBox(
-                height: 20,
+                height: 3.h,
               ),
               Textfild(Icons.phone, "Enter Your PhoneNumber", "PhoneNumber"),
               SizedBox(
-                height: 20,
+                height: 3.h,
               ),
               PassText(
                   Icons.remove_red_eye, "Enter Your Password ", "PassWord"),
               SizedBox(
-                height: 20,
+                height: 3.h,
               ),
               PassText(
                   Icons.remove_red_eye, "Confirm Your Password", "PassWord"),
               SizedBox(
-                height: 20,
+                height: 5.h,
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text(
+                  "Sign In",
+                  style: TextStyle(
+                    color: Color(0xff2F80ED),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.white12,
+                  primary: Colors.red,
+                  fixedSize: Size(200, 60),
+                  side: BorderSide(width: 3, color: Color(0xff2F80ED)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
               ),
             ],
           ),

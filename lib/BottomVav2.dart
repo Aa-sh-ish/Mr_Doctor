@@ -31,27 +31,6 @@ class _BottonNav2State extends State<BottonNav2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xff2F80ED),
-        title: Row(
-          children: [
-            ImageIcon(
-              AssetImage(
-                "assets/FYPlogo_suman-11 1.png",
-              ),
-            ),
-            SizedBox(width: 50),
-            Text(
-              "See Your Doctors",
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 25,
-                color: Colors.white,
-              ),
-            ),
-          ],
-        ),
-      ),
       bottomNavigationBar: CurvedNavigationBar(
         buttonBackgroundColor: Colors.pink,
         backgroundColor: Colors.white,

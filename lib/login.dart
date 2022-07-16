@@ -3,6 +3,7 @@ import 'package:health/BottomVav2.dart';
 import 'package:health/register.dart';
 //import 'package:health/bottmVani.dart';
 //import 'package:health/screen1.dart';
+import 'package:sizer/sizer.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -19,39 +20,45 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Image.asset("assets/Rectangle 1.png"),
                   Positioned(
-                    top: 100,
+                    top: 10,
                     left: 60,
-                    child: Image.asset(
-                      "assets/FYPlogo_suman-11 1.png",
-                      height: 125,
-                      width: 125,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 50),
-                    child: Text(
-                      "Log In",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/FYPlogo_suman-11 1.png",
+                          height: 20.h,
+                          width: 120,
+                          color: Colors.white,
+                        ),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 24),
+                              child: Text(
+                                "Log In",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 30,
+                                    color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ],
               ),
               SizedBox(
-                height: 32,
+                height: 5.h,
               ),
               Textfild(Icons.person, "Enter Your Name", "UserName"),
               SizedBox(
-                height: 32,
+                height: 5.h,
               ),
               Textfild(Icons.mail, "Enter Your E-mail", "Email"),
               SizedBox(
-                height: 32,
+                height: 5.h,
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 24, right: 24),
@@ -87,7 +94,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 32,
+                height: 5.h,
               ),
               OutlinedButton(
                 onPressed: () {
@@ -116,17 +123,14 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 65,
-              ),
               Stack(
                 children: [
                   Image.asset(
                     "assets/Rectangle 3.png",
-                    // height: 600,
+                    height: 30.h,
                   ),
                   Positioned(
-                    height: 100,
+                    height: 20.h,
                     left: 40,
                     child: Row(
                       children: [
