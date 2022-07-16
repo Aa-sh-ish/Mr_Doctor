@@ -31,6 +31,7 @@ dependencies:
   #scroll_app_bar: ^2.0.0
   sizer: ^2.0.15
   carousel_slider: ^4.1.1
+  http: ^0.13.4
   flutter:
     sdk: flutter
 

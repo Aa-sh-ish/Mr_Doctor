@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health/doctor_bio.dart';
 //import 'package:health/MovieScreen.dart';
 //import 'package:scroll_app_bar/scroll_app_bar.dart';
 import 'package:sizer/sizer.dart';
@@ -159,12 +160,23 @@ class Screen1 extends StatelessWidget {
                                         width: 5,
                                       ),
                                       Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(10)),
-                                            color: Color(0xff969696),
-                                          ),
-                                          child: Icon(Icons.forward)),
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(10)),
+                                          color: Color(0xff969696),
+                                        ),
+                                        child: IconButton(
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      DocotorBio()),
+                                            );
+                                          },
+                                          icon: Icon(Icons.forward),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
@@ -247,12 +259,21 @@ class Screen1 extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Color(0xff48BF94),
                             borderRadius: BorderRadius.circular(10)),
-                        child: Text(
-                          " Search Doctor ",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15.sp),
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => DocotorBio()),
+                            );
+                          },
+                          child: Text(
+                            " Search Doctor ",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15.sp),
+                          ),
                         ),
                       ),
                     ],
